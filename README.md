@@ -19,6 +19,7 @@ How To Use
 
 This is the most simple way to get started. It will collect data from all inputs, selects, and textareas, and put them into a simple object that you can dot into. You can use formgrabber from specific elements.
 
+**html**
 ```html
 <form>
 	<div id="userInfo">
@@ -30,7 +31,7 @@ This is the most simple way to get started. It will collect data from all inputs
 	</div>
 </form>
 ```
-
+**js**
 ```javascript
     var food = $('#foodInfo').grab();
 ```
@@ -40,27 +41,28 @@ That should get you the data within the foodInfo div.
 Options
 -------
 What would a plugin be without some options. Right now you have only a couple options, but it still helps!
-
+**js**
 ```javascript
 var data = $('form').grab({allowBlank: true});
 ```
 By setting allowBlank to true, you are allowing any empty for elements to be mapped to your object. By default, it is set to false and will ignore any inputs that are not filled out
-
+**js**
 ```javascript
 var data = $('form').grab({format: 'json'});
 ```
 For some reason, if you just want your objects to be in the form of JSON, you can just set the format. By default it is set to 'object' which means javascript object.
-
+**js**
 ```javascript
 var data = $('form').grab({findBy: 'id'});
 ```
 If you want to pull the data out of your form by a specific attr, use findBy. The default is set to 'name'.
-
+**html**
 ```html
 	<input type="text" name="fish">
 	<input type="text" name="lamp">
 	<input type="hidden" name="_token">
 ```
+**js**
 ```javascript
 var data = $('form').grab({exclude: ['_token','lamp']});
 ```
