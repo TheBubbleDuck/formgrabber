@@ -1,10 +1,10 @@
-FormGrabber for Grabbing!
+formgrabber.js for Grabbing!
 =========================
 
 Description
 ---------------------
 
-FormGrabber is a simple jQuery plugin for grabbing datas from a form. It is still being polished, so forgive me (this is my first real one). 
+formgrabber.js is a simple jQuery plugin for grabbing datas from a form. It is still being polished, so forgive me (this is my first real one). 
 
 Why?
 ----
