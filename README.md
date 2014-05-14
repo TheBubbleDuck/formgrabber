@@ -47,7 +47,7 @@ What would a plugin be without some options. Right now you have only a couple op
 ```javascript
 var data = $('form').grab({allowBlank: true});
 ```
-By setting allowBlank to true, you are allowing any empty for elements to be mapped to your object. By default, it is set to false and will ignore any inputs that are not filled out
+By setting allowBlank to true, you are allowing any empty elements to be mapped to your object. By default, it is set to false and will ignore any inputs that are not filled out.
 
 **js**
 ```javascript
@@ -72,3 +72,7 @@ If you want to pull the data out of your form by a specific attr, use findBy. Th
 var data = $('form').grab({exclude: ['_token','lamp']});
 ```
 If you need to exclude certain things for the data return, than pass them as an array. There may be hidden fields you don't need for whatever reason you don't need them.
+
+In Conclusion
+-------------
+Sure, there are plenty of frameworks that do model-form binding. However, in the case you need a really quick way to pull out form data, use this! Combine it with something like underscore.js to give collection functions and it might be what you need!
